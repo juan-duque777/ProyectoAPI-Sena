@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar producto</title>
+    <link rel="stylesheet" href="../css/flowbite.min.css">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+</head>
+<body>
+    <section class="bg-gray-400 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-16 mx-auto md:h-screen lg:py-0">
+            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500 md:text-2xl">
+                        Registrar producto
+                    </h1>
+                    <form id="formupost" class="space-y-4 md:space-y-6" enctype="multipart/form-data">
+                        <div class="flex items-center space-x-4">
+                            <label for="id" class="w-28 text-sm font-medium text-gray-900 dark:text-white">ID:</label>
+                            <input type="text" name="id" id="id" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <label for="nombre" class="w-28 text-sm font-medium text-gray-900 dark:text-white">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <label for="descripcion" class="w-28 text-sm font-medium text-gray-900 dark:text-white">Descripción:</label>
+                            <input type="text" name="descripcion" id="descripcion" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <label for="precio" class="w-28 text-sm font-medium text-gray-900 dark:text-white">Precio:</label>
+                            <input type="text" name="precio" id="precio" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <label for="cantidad" class="w-28 text-sm font-medium text-gray-900 dark:text-white">Cantidad:</label>
+                            <input type="text" name="cantidad" id="cantidad" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        </div>
+                        <!-- componente para imagenes -->
+                        <!-- <div class="flex items-center space-x-4">
+                            <label for="imagenesp" class="w-28 text-sm font-medium text-gray-900 dark:text-white">Fotos de productos:</label>
+                            <input type="file" id="imagenesp" name="imagenesp" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white" multiple>
+                        </div> -->
+
+                        <div class="flex justify-center space-x-4 pt-4">
+                            <button type="submit" name="registrar" id="registrar" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5">
+                                Registrar
+                            </button>
+                            <button type="reset" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5">
+                                Limpiar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/browser@4.js"></script>
+    <script src="../js/flowbite.min.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script type="module" src="../js/scriptproductos.js"></script>
+</body>
+</html>

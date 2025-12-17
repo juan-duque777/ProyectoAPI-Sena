@@ -1,0 +1,22 @@
+.botondelete{
+background-image: url(../assets/delete.png);
+width: 30px;
+height: 30px;
+background-size: contain;
+}
+.botonyes{
+background-image: url(../assets/yes.png);
+width: 30px;
+height: 30px;
+background-size: contain;
+
+}
+.botonnot{
+background-image: url(../assets/not.png);
+width: 30px;
+height: 30px;
+background-size: contain;
+}
+.textol{
+color: rgb(134, 47, 47) ;
+}

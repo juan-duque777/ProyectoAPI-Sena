@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eliminar producto</title>
+    <link rel="stylesheet" href="../css/flowbite.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <section class="bg-gray-400 dark:bg-gray-900 min-h-screen">
+        <div class="flex flex-col items-center justify-center px-6 py-16 mx-auto">
+            <div class="w-full max-w-6xl bg-white rounded-lg shadow dark:border dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500 md:text-2xl text-center">
+                        Eliminar producto
+                    </h1>
+
+                    <form id="formu" class="space-y-4 md:space-y-6">
+                        <div class="flex flex-col space-y-4 w-full">
+                        <div class="flex items-center space-x-4">
+                            <label for="dato1" class="w-28 text-sm font-medium text-gray-900 dark:text-white">Nombre:</label>
+                            <input type="text" id="dato1" class="w-1/ bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white" required />
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <label class="w-28"></label>
+                            <button id="enviar" type="submit" class="w-1/ bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl text-white font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800">
+                            Consultar
+                            </button>
+                        </div>
+                        </div>
+                        <div class="overflow-x-auto mt-8">
+                        <table id="datostabla" class="min-w-full text-sm text-left text-gray-500 dark:text-gray-400 border rounded-lg overflow-hidden">
+                            <thead class="text-xs text-white uppercase bg-gradient-to-br from-purple-600 to-blue-500 dark:bg-gray-700">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">ID</th>
+                                <th scope="col" class="px-6 py-3">Nombre</th>
+                                <th scope="col" class="px-6 py-3">Descripción</th>
+                                <th scope="col" class="px-6 py-3">Precio</th>
+                                <th scope="col" class="px-6 py-3">Cantidad</th>
+                                <th scope="col" class="px-6 py-3"></th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td id="idp" class="px-6 py-4 font-medium text-gray-900 dark:text-white"></td>
+                                <td id="nombrep" class="px-6 py-4"></td>
+                                <td id="descripcionp" class="px-6 py-4"></td>
+                                <td id="preciop" class="px-6 py-4"></td>
+                                <td id="cantidadp" class="px-6 py-4"></td>
+                                <td id="btndel" class="px-6 py-4"></td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" id="confirm">
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/browser@4.js"></script>
+    <script src="../js/flowbite.min.js"></script>
+    <script type="module" src="../js/scriptdelete.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "data": [
+    {
+        "id": 1,
+        "nombre": "Otro",
+        "descripcion": "dssadsa",
+        "precio": 21312,
+        "cantidad": 213,
+        "fotos": [
+            "otroooo1759333799602.png",
+            "otroooo1759333799603.png",
+            "otroooo1759333799640.png"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Papa",
+        "descripcion": "fsdfdsfsd",
+        "precio": 213123,
+        "cantidad": 131,
+        "fotos": [
+            "Papa1759608276994.jpeg",
+            "Papa1759608276996.jpeg"
+        ]
+    }
+    ]
+}

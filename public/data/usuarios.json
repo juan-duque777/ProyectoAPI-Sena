@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombres": "juan duque",
+        "nombreusuario": "juan",
+        "password": "$2b$10$LuX82Mz9CASZmEakdCmH8uBTWj29jQvrdQPZ.fXT/lPUSSXyyPAV2",
+        "correo": "juan@gmail.com",
+        "telefono": 2313123,
+        "rol": "admin",
+        "foto": "public\\assets\\fotoperfil\\juan\\juan1759497634357.jpeg"
+    },
+    {
+        "id": 2,
+        "nombres": "geronimo torres",
+        "nombreusuario": "geronimo",
+        "password": "$2b$10$2CXG7GSbF5b9C5xmCaUQEuaPZxNyGWG5Sxp2eo5Fnxq/CRadHhhrS",
+        "correo": "gero@gmail.com",
+        "telefono": 3215578778,
+        "rol": "usuario",
+        "foto": "public\\assets\\fotoperfil\\geronimo\\geronimo1759532195534.jpeg"
+    }
+]

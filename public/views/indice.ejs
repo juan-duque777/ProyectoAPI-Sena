@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de bienvenida</title>
+    <link rel="stylesheet" href="../css/flowbite.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+        <section class="bg-gray-400 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-16 mx-auto md:h-screen lg:py-0">
+            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-5 space-y-3 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500 text-center md:text-2xl">
+                        Bienvenido ¿Que <span class="textol">módulo</span> desea consultar?
+                    </h1>
+                    <h2 id="nombredeusuario" class="text-xl font-bold leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500 text-center md:text-2xl"></h2>
+
+                    <div class="flex justify-center gap-15">
+                        <a href="/productos">
+                        <button data-value="" type="button" id="" class=" text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Productos
+                        </button>
+                        </a>
+                        <a href="/usuarios">
+                        <button data-value="" type="button" id="" class=" text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Usuarios
+                        </button>
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button type="button" id="btnCerrar" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Cerrar sesion 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/browser@4.js"></script>
+    <script src="../js/flowbite.min.js"></script>
+    <script>
+        let parametro = new URLSearchParams(window.location.search)
+        let usuario = parametro.get("usuario")
+        document.getElementById("nombredeusuario").textContent = usuario
+    </script>
+</body>
+</html>
